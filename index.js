@@ -1,7 +1,7 @@
 $(document).ready(function(){
  
- 
  var onScreen = '';
+ var click = new Audio("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1216298/Type%20Single%20Key%20(44100%20Hz).mp3");
   
   $('.col').click(function(){
         onScreen += this.value;
@@ -26,10 +26,12 @@ $('#bs').click(function(){
  // $('.screen').html("<p class ='onscreen'>" + onScreen + "</p>");
   document.getElementById('screen').innerHTML = "<p class ='onscreen'>" + onScreen + "</p>";
 });
+  
 $('button').click(function(){
   var x = $(this);
   x.animate({top: '5px'},100);
   x.animate({top: '0'},100);
+  click.play();
 });
 
 });

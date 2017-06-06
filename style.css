@@ -1,14 +1,20 @@
+header{
+  margin:20px 0 0 0;
+  text-align:center;
+}
+
 body{
-  background-color:rgba(182, 245, 250, 0.48);
+  background-color:rgb(142, 221, 255);
 }
 .calc{
   height: 600px;
   width: 40%;
   border: 10px outset lightgrey;
-  margin: 20px auto;
+  margin: 0 auto;
   border-radius: 30px;
   background: linear-gradient(to bottom right, black, lightgrey);
   box-shadow: 20px 20px 10px black,-3px -3px 10px black;
+  transform:scale(.6) translatey(-100px);
 }
 #screen{
   width: 100%;
@@ -39,16 +45,17 @@ button{
   border: 12px outset lightgray;
   color:black;
   cursor:pointer;
-  font-family:"Nova Square", sans-serif;
-  
-  
+  font-family:"Nova Square", sans-serif; 
 }
 
 button:hover{
   background:black;
   color:white;
   transform: scale(1.1);
-  
+}
+
+button:focus {
+outline:transparent;
 }
 .equals{
   width: 100px;
@@ -59,31 +66,5 @@ button:hover{
 .min{
   font-size: 20px;
 }
-@media (max-width:1024px){
-  .calc{
-    width:50%;
-  }
 
-@media (max-width:768px){
-  .calc{
-    width:70%;
-  }
-}
-  @media (max-width:434px){
-  .calc{
-    width:100%;
-  }
-  .col{
-      height:65px;
-    }
-    button{
-      font-size:20px;
-    }
-    .min{
-      font-size:10px;
-    }
-    .container{
-      height:200px;
-    }
-    
-}
+
